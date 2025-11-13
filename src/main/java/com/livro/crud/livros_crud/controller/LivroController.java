@@ -15,19 +15,19 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.livro.crud.livros_crud.entity.Autor;
 import com.livro.crud.livros_crud.entity.Livro;
 import com.livro.crud.livros_crud.service.LivroService;
 
 @RestController
 @RequestMapping("/livro")
 public class LivroController {
-    
+
     @Autowired
     private LivroService livroService;
-    
+
+
     @PostMapping("/save")
-    public ResponseEntity<Livro> saveLivro(@RequestBody Livro livro){
+    public ResponseEntity<Livro> saveLivro(@RequestBody Livro livro) {
         try {
             Livro save = livroService.saveLivro(livro);
             return new ResponseEntity<>(save, HttpStatus.CREATED);
@@ -37,7 +37,7 @@ public class LivroController {
     }
 
     @GetMapping("/findAll")
-    public ResponseEntity<List<Livro>> findAll(){
+    public ResponseEntity<List<Livro>> findAll() {
         try {
             List<Livro> findAll = this.livroService.findAllLivros();
             return new ResponseEntity<>(findAll, HttpStatus.OK);
@@ -47,7 +47,7 @@ public class LivroController {
     }
 
     @GetMapping("/findById/{id}")
-    public ResponseEntity<Livro> findById(@PathVariable Long id){
+    public ResponseEntity<Livro> findById(@PathVariable Long id) {
         try {
             Livro findbyid = this.livroService.findByIdLivro(id);
             if (findbyid == null) {
@@ -60,7 +60,7 @@ public class LivroController {
     }
 
     @PatchMapping("/update/{id}")
-    public ResponseEntity<Livro> update(@PathVariable Long id, @RequestBody Livro livro){
+    public ResponseEntity<Livro> update(@PathVariable Long id, @RequestBody Livro livro) {
         try {
             Livro update = this.livroService.update(id, livro);
             return new ResponseEntity<>(update, HttpStatus.OK);
@@ -70,7 +70,7 @@ public class LivroController {
     }
 
     @DeleteMapping("/delete/{id}")
-    public ResponseEntity delete(@PathVariable Long id){
+    public ResponseEntity delete(@PathVariable Long id) {
         try {
             this.livroService.delete(id);
             return new ResponseEntity<>(HttpStatus.OK);
@@ -79,9 +79,8 @@ public class LivroController {
         }
     }
 
-
     @GetMapping("/findByTitulo")
-    public ResponseEntity<List<Livro>> findByTitulo(@RequestParam String titulo){
+    public ResponseEntity<List<Livro>> findByTitulo(@RequestParam String titulo) {
         try {
             List<Livro> lista = this.livroService.findByTitulo(titulo);
             return new ResponseEntity<>(lista, HttpStatus.OK);
@@ -91,7 +90,7 @@ public class LivroController {
     }
 
     @GetMapping("/findByAno")
-    public ResponseEntity<List<Livro>> findByAno(@RequestParam int ano){
+    public ResponseEntity<List<Livro>> findByAno(@RequestParam int ano) {
         try {
             List<Livro> lista = this.livroService.findByAno(ano);
             return new ResponseEntity<>(lista, HttpStatus.OK);
@@ -101,7 +100,7 @@ public class LivroController {
     }
 
     @GetMapping("/findByAutor")
-    public ResponseEntity<List<Livro>> findByAno(@RequestParam long idAutor){
+    public ResponseEntity<List<Livro>> findByAutor(@RequestParam long idAutor) {
         try {
             List<Livro> lista = this.livroService.findByAutor(idAutor);
             return new ResponseEntity<>(lista, HttpStatus.OK);
@@ -111,7 +110,7 @@ public class LivroController {
     }
 
     @GetMapping("/findByAnoMaiorQue")
-    public ResponseEntity<List<Livro>> findByAnoMaiorQue(@RequestParam int ano){
+    public ResponseEntity<List<Livro>> findByAnoMaiorQue(@RequestParam int ano) {
         try {
             List<Livro> lista = this.livroService.findByAnoMaiorQue(ano);
             return new ResponseEntity<>(lista, HttpStatus.OK);
@@ -119,4 +118,5 @@ public class LivroController {
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         }
     }
+
 }

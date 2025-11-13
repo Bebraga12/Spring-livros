@@ -1,6 +1,7 @@
 package com.livro.crud.livros_crud.repository;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
@@ -16,7 +17,13 @@ public interface LivroRepository extends JpaRepository<Livro, Long>{
 
     public List<Livro> findByAutor(Autor autor);
 
+    public Optional<Livro> findById(Long id);
+
+
     @Query("FROM Livro l WHERE l.ano > :ano")
     public List<Livro> findByAnoMaiorQue(int ano);
+
+    
+
 }
  
