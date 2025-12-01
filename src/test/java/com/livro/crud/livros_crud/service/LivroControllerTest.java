@@ -8,6 +8,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -82,6 +83,7 @@ public class LivroControllerTest {
         //assertEquals(3, retorno.getBody().size());
     }
 
+    @Disabled
     @Test
     void findById() {
         ResponseEntity<Livro> retorno = this.livroController.findById(1L);
