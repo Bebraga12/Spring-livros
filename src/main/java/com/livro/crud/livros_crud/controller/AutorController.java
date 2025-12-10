@@ -16,7 +16,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.livro.crud.livros_crud.entity.Autor;
-import com.livro.crud.livros_crud.entity.Livro;
 import com.livro.crud.livros_crud.service.AutorService;
 
 @RestController
