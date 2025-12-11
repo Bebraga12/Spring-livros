@@ -1,4 +1,4 @@
-package app.config;
+package com.livro.crud.livros_crud.config;
 
 import java.util.HashMap;
 import java.util.Map;

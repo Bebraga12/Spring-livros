@@ -1,4 +1,4 @@
-package app.auth;
+package com.livro.crud.livros_crud.auth;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

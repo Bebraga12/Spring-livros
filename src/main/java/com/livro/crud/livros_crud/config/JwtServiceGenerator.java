@@ -1,4 +1,4 @@
-package app.config;
+package com.livro.crud.livros_crud.config;
 
 //JwtService.java
 
@@ -11,7 +11,8 @@ import java.util.function.Function;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
 
-import app.auth.Usuario;
+import com.livro.crud.livros_crud.auth.Usuario;
+
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;

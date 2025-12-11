@@ -1,12 +1,12 @@
 //AuthenticationService.java
-package app.auth;
+package com.livro.crud.livros_crud.auth;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.stereotype.Service;
 
-import app.config.JwtServiceGenerator;
+import com.livro.crud.livros_crud.config.JwtServiceGenerator;
 
 @Service
 public class LoginService {

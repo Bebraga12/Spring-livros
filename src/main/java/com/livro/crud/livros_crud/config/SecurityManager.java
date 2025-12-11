@@ -1,4 +1,4 @@
-package app.config;
+package com.livro.crud.livros_crud.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -12,7 +12,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
-import app.auth.LoginRepository;
+import com.livro.crud.livros_crud.auth.LoginRepository;
 
 @Configuration
 public class SecurityManager {
