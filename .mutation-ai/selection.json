@@ -1,0 +1,56 @@
+{
+  "projectRoot" : "/home/braga/Documentos/Faculdade/TCC/projetos-testes/Spring-livros",
+  "selectedAt" : "2026-05-27T17:23:38.860127133Z",
+  "totalSelected" : 10,
+  "classes" : [ {
+    "className" : "LoginController",
+    "packageName" : "com.livro.crud.livros_crud.auth",
+    "fullyQualifiedName" : "com.livro.crud.livros_crud.auth.LoginController",
+    "relativePath" : "com/livro/crud/livros_crud/auth/LoginController.java"
+  }, {
+    "className" : "LoginService",
+    "packageName" : "com.livro.crud.livros_crud.auth",
+    "fullyQualifiedName" : "com.livro.crud.livros_crud.auth.LoginService",
+    "relativePath" : "com/livro/crud/livros_crud/auth/LoginService.java"
+  }, {
+    "className" : "GlobalExceptionHandler",
+    "packageName" : "com.livro.crud.livros_crud.config",
+    "fullyQualifiedName" : "com.livro.crud.livros_crud.config.GlobalExceptionHandler",
+    "relativePath" : "com/livro/crud/livros_crud/config/GlobalExceptionHandler.java"
+  }, {
+    "className" : "JwtAuthenticationFilter",
+    "packageName" : "com.livro.crud.livros_crud.config",
+    "fullyQualifiedName" : "com.livro.crud.livros_crud.config.JwtAuthenticationFilter",
+    "relativePath" : "com/livro/crud/livros_crud/config/JwtAuthenticationFilter.java"
+  }, {
+    "className" : "JwtServiceGenerator",
+    "packageName" : "com.livro.crud.livros_crud.config",
+    "fullyQualifiedName" : "com.livro.crud.livros_crud.config.JwtServiceGenerator",
+    "relativePath" : "com/livro/crud/livros_crud/config/JwtServiceGenerator.java"
+  }, {
+    "className" : "SecurityManager",
+    "packageName" : "com.livro.crud.livros_crud.config",
+    "fullyQualifiedName" : "com.livro.crud.livros_crud.config.SecurityManager",
+    "relativePath" : "com/livro/crud/livros_crud/config/SecurityManager.java"
+  }, {
+    "className" : "AutorController",
+    "packageName" : "com.livro.crud.livros_crud.controller",
+    "fullyQualifiedName" : "com.livro.crud.livros_crud.controller.AutorController",
+    "relativePath" : "com/livro/crud/livros_crud/controller/AutorController.java"
+  }, {
+    "className" : "LivroController",
+    "packageName" : "com.livro.crud.livros_crud.controller",
+    "fullyQualifiedName" : "com.livro.crud.livros_crud.controller.LivroController",
+    "relativePath" : "com/livro/crud/livros_crud/controller/LivroController.java"
+  }, {
+    "className" : "AutorService",
+    "packageName" : "com.livro.crud.livros_crud.service",
+    "fullyQualifiedName" : "com.livro.crud.livros_crud.service.AutorService",
+    "relativePath" : "com/livro/crud/livros_crud/service/AutorService.java"
+  }, {
+    "className" : "LivroService",
+    "packageName" : "com.livro.crud.livros_crud.service",
+    "fullyQualifiedName" : "com.livro.crud.livros_crud.service.LivroService",
+    "relativePath" : "com/livro/crud/livros_crud/service/LivroService.java"
+  } ]
+}
