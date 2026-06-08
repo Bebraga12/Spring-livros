@@ -1,0 +1,11 @@
+{
+  "projectRoot" : "/home/braga/Documentos/Faculdade/TCC/novo-clone/crud-virgem/Spring-livros",
+  "selectedAt" : "2026-06-08T14:34:40.950509389Z",
+  "totalSelected" : 1,
+  "classes" : [ {
+    "className" : "LivroService",
+    "packageName" : "com.livro.crud.livros_crud.service",
+    "fullyQualifiedName" : "com.livro.crud.livros_crud.service.LivroService",
+    "relativePath" : "com/livro/crud/livros_crud/service/LivroService.java"
+  } ]
+}

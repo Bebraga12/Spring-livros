@@ -5,6 +5,10 @@ import java.util.Optional;
 import com.livro.crud.livros_crud.entity.Autor;
 import com.livro.crud.livros_crud.entity.Livro;
 import com.livro.crud.livros_crud.repository.LivroRepository;
+import java.util.ArrayList;
+import java.util.Set;
+import java.util.Map;
+import java.util.HashMap;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -15,12 +19,8 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 import static org.mockito.ArgumentMatchers.*;
-import java.util.ArrayList;
-import java.util.Set;
-import java.util.Map;
-import java.util.HashMap;
 
-@ExtendWith(MockitoExtension.class)
+@ExtendWith(value = MockitoExtension.class)
 public class LivroServiceTest {
 
     @Mock
@@ -74,13 +74,7 @@ public class LivroServiceTest {
     @Test
     public void testUpdateFound() throws Exception {
         Long id = 1L;
-        // Create a Livro object and initialize all necessary fields
         Livro livroAtualizado = new Livro();
-        livroAtualizado.setId(id);
-        // Ensure the title is set
-        livroAtualizado.setTitulo("Java Programming");
-        // Set other required fields if any
-        livroAtualizado.setAno(2023);
         when(livroRepository.findById(id)).thenReturn(Optional.of(new Livro()));
         when(livroRepository.save(any(Livro.class))).thenReturn(livroAtualizado);
         Livro result = subject.update(id, livroAtualizado);
